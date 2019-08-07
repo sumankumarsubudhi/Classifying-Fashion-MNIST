@@ -62,7 +62,7 @@ for e in range(epochs):
     else:
         print(f"Training loss: {running_loss/len(trainloader)}")
 
-        %matplotlib inline
+%matplotlib inline
 %config InlineBackend.figure_format = 'retina'
 
 import helper
