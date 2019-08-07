@@ -45,3 +45,19 @@ class Classifier(nn.Module):
 model = Classifier()
 criterion = nn.NLLLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.003)
+
+epochs = 5
+
+for e in range(epochs):
+    running_loss = 0
+    for images, labels in trainloader:
+        log_ps = model(images)
+        loss = criterion(log_ps, labels)
+        
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+        
+        running_loss += loss.item()
+    else:
+        print(f"Training loss: {running_loss/len(trainloader)}")
