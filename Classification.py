@@ -1,6 +1,11 @@
 import torch
 from torchvision import datasets, transforms
 import helper
+from torch import nn, optim
+import torch.nn.functional as F
+import helper
+%matplotlib inline
+%config InlineBackend.figure_format = 'retina'
 
 # Define a transform to normalize the data
 transform = transforms.Compose([transforms.ToTensor(),
@@ -18,9 +23,6 @@ image, label = next(iter(trainloader))
 helper.imshow(image[0,:]);
 
 # Building the network
-from torch import nn, optim
-import torch.nn.functional as F
-
 class Classifier(nn.Module):
     def __init__(self):
         super().__init__()
@@ -62,13 +64,8 @@ for e in range(epochs):
     else:
         print(f"Training loss: {running_loss/len(trainloader)}")
 
-%matplotlib inline
-%config InlineBackend.figure_format = 'retina'
-
-import helper
 
 # Test out your network!
-
 dataiter = iter(testloader)
 images, labels = dataiter.next()
 img = images[1]
