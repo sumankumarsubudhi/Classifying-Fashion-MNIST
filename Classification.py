@@ -61,3 +61,14 @@ for e in range(epochs):
         running_loss += loss.item()
     else:
         print(f"Training loss: {running_loss/len(trainloader)}")
+
+        %matplotlib inline
+%config InlineBackend.figure_format = 'retina'
+
+import helper
+
+# Test out your network!
+
+dataiter = iter(testloader)
+images, labels = dataiter.next()
+img = images[1]
