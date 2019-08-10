@@ -44,7 +44,6 @@ class Classifier(nn.Module):
         return x
         
 # Train the network
-
 # Create the network, define the criterion and optimizer
 model = Classifier()
 criterion = nn.NLLLoss()
