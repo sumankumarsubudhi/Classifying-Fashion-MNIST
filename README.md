@@ -8,3 +8,4 @@ Fashion-MNIST is a set of 28x28 greyscale images of clothes. It's more complex t
 
 ## After training the model
 
+<img src="https://user-images.githubusercontent.com/20025875/62825254-6a215980-bbc6-11e9-94aa-080b8c1fce04.png" width = '400'>
