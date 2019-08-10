@@ -8,4 +8,4 @@ MNIST is actually quite trivial with neural networks where you can easily achiev
 
 ## After training the model
 
-<img src="https://user-images.githubusercontent.com/20025875/62825254-6a215980-bbc6-11e9-94aa-080b8c1fce04.png" width = '400'>
+<img src="https://user-images.githubusercontent.com/20025875/62825254-6a215980-bbc6-11e9-94aa-080b8c1fce04.png" width = '350'>
